@@ -1,0 +1,130 @@
+/* Reset & base */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 860px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(0,0,0,.10);
+  padding: 48px 56px;
+}
+
+/* Header */
+header {
+  border-bottom: 3px solid #1a5276;
+  padding-bottom: 20px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #1a5276;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact {
+  margin-top: 8px;
+  font-size: .95rem;
+  color: #555;
+}
+
+.contact a {
+  color: #1a5276;
+  text-decoration: underline;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  margin-bottom: 32px;
+}
+
+section h2 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #1a5276;
+  border-bottom: 1px solid #d0dce8;
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+section p {
+  color: #333;
+}
+
+/* Experience list */
+ul.experience, ul.education {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job-header, .edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.job-title, .edu-degree {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #222;
+}
+
+.job-date, .edu-date {
+  font-size: .875rem;
+  color: #555;
+  white-space: nowrap;
+  margin-left: 12px;
+}
+
+.employer, .edu-school {
+  font-style: italic;
+  color: #1a5276;
+  font-size: .9rem;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Skills list */
+ul.skills {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+ul.skills li::before {
+  content: '▸ ';
+  color: #1a5276;
+}
+
+/* Print */
+@media print {
+  body { background: #fff; }
+  .container { box-shadow: none; margin: 0; padding: 24px; }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container { padding: 24px 20px; margin: 16px; }
+  header h1 { font-size: 1.4rem; }
+  .job-header, .edu-header { flex-direction: column; }
+  .job-date, .edu-date { margin-left: 0; }
+}
