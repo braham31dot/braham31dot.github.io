@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional CV of Aymene Bendali Braham" />
+  <title>Aymene Bendali Braham | CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="container">
+    <header class="hero reveal">
+      <p class="eyebrow">Curriculum Vitae</p>
+      <h1>AYMENE BENDALI BRAHAM</h1>
+      <p class="subtitle">Trilingual Professional · Customer Service · Administrative Support · Technical Design</p>
+      <p class="contact">Montréal, QC · 263-355-2446 · <a href="mailto:Braham.ben31@gmail.com">Braham.ben31@gmail.com</a></p>
+    </header>
+
+    <section class="card reveal" id="summary">
+      <h2>Professional Summary</h2>
+      <p>
+        Trilingual professional with 4+ years in customer service, administrative support, and technical design.
+        Recognized for organization, precision, problem-solving, and calm performance in fast-paced environments.
+      </p>
+    </section>
+
+    <section class="reveal" id="experience">
+      <h2>Work Experience</h2>
+      <div class="timeline">
+        <article class="card timeline-item">
+          <h3>Mosaïque</h3>
+          <p class="role">AutoCAD Intern <span>· 2024–2025</span></p>
+          <p>Designed technical drawings and collaborated on project deliverables aligned with client specifications.</p>
+        </article>
+
+        <article class="card timeline-item">
+          <h3>Jardins de la Parti</h3>
+          <p class="role">Administrative Assistant <span>· 2022–2023</span></p>
+          <p>Managed schedules, documentation, and daily administrative operations support.</p>
+        </article>
+
+        <article class="card timeline-item">
+          <h3>36 Pix</h3>
+          <p class="role">Green Screen Editor <span>· 2021–2022</span></p>
+          <p>Retouched and edited digital photography while consistently meeting production deadlines.</p>
+        </article>
+
+        <article class="card timeline-item">
+          <h3>Capital One &amp; Gatestone</h3>
+          <p class="role">Collections Agent <span>· 2021</span></p>
+          <p>Negotiated payment agreements and handled client accounts with professionalism.</p>
+        </article>
+
+        <article class="card timeline-item">
+          <h3>TTEC / Horizon</h3>
+          <p class="role">Customer Service <span>· 2020–2021</span></p>
+          <p>Resolved billing-related requests and provided clear, supportive customer guidance.</p>
+        </article>
+
+        <article class="card timeline-item">
+          <h3>Fido</h3>
+          <p class="role">Customer Service Agent <span>· 2019–2020</span></p>
+          <p>Managed customer accounts and recommended services adapted to customer needs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="grid-two reveal" id="details">
+      <article class="card">
+        <h2>Education</h2>
+        <ul class="list">
+          <li><strong>AEC, CAD Designer</strong> — Herzing College <span>(2023–2025)</span></li>
+          <li><strong>Certificate, Business Launch</strong> — CEP <span>(2025)</span></li>
+          <li><strong>BAC, Foreign Languages</strong> <span>(2015–2017)</span></li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Skills</h2>
+        <ul class="list">
+          <li>AutoCAD (2D &amp; 3D), Microsoft Office, CRM systems</li>
+          <li>Customer service &amp; conflict resolution</li>
+          <li>Administrative management &amp; work organization</li>
+          <li>Arabic, French, English (fluent) · Spanish (advanced)</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const items = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    items.forEach((item) => observer.observe(item));
+  </script>
+</body>
+</html>
