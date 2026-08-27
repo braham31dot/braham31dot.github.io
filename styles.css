@@ -41,7 +41,7 @@ header h1 {
 
 .contact a {
   color: #1a5276;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .contact a:hover {
@@ -89,7 +89,7 @@ ul.experience, ul.education {
 
 .job-date, .edu-date {
   font-size: .875rem;
-  color: #777;
+  color: #555;
   white-space: nowrap;
   margin-left: 12px;
 }
